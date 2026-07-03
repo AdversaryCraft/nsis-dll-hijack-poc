@@ -98,6 +98,12 @@ Installation completes
 
 ---
 
+![Install_Button](screenshots/CCleaner_Installed_Successfully.png)
+
+*CCleaner installation completes successfully after proxy DLL execution*
+
+---
+
 ## Disclaimer
 
 This repository is provided solely for educational purposes, reverse engineering research, and defensive security validation within authorized laboratory environments.
