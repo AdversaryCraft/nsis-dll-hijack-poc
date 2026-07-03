@@ -74,7 +74,7 @@ Installation completes
 
 ## Screenshots
 
-![Installer](screenshots/UAC_Prompt.png)
+![UAC_Prompt](screenshots/UAC_Prompt.png)
 
 *CCleaner installer running after UAC approval*
 
