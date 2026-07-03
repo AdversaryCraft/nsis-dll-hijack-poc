@@ -11,8 +11,8 @@ This repository explores the **Nullsoft Scriptable Install System (NSIS)** plugi
 
 ```text
 .
-├── ccsetup564.exe             # Legitimate NSIS installer (not included)
-├── launch.wsf                 # Lab launcher
+├── ccsetup564.exe             # Legitimate NSIS installer
+├── launch.wsf                 # Launcher
 ├── nsDialogs.dll              # Instrumented proxy DLL
 ├── msvcrt_original.dll        # Renamed original plugin
 ├── screenshots/
