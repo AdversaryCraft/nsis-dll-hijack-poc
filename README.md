@@ -84,6 +84,7 @@ Installation completes
 
 *`launch.wsf` copies `nsDialogs.dll` and `msvcrt_original.dll` to `ns*.tmp` folder before user clicks Install*
 
+---
 
 ## Disclaimer
 
