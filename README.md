@@ -86,6 +86,12 @@ Installation completes
 
 ---
 
+![Install_Button](screenshots/Install_Button.png)
+
+*User clicks "Install" - NSIS loads `nsDialogs.dll` from temp folder and executes the proxy*
+
+---
+
 ## Disclaimer
 
 This repository is provided solely for educational purposes, reverse engineering research, and defensive security validation within authorized laboratory environments.
