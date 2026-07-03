@@ -60,9 +60,11 @@ Proxy DLL executes with installer privileges
         │
         ▼
 Installation completes
+```
+
+## How It Works?
 
 
-## Quick Setup
 
 1. Clone or download the repository
 2. Place all files in same folder
