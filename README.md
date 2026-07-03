@@ -29,7 +29,7 @@ User launches installer
 User approves UAC
         │
         ▼
-NSIS creates nseXXXX.tmp
+NSIS creates nsXXXXX.tmp
         │
         ▼
 Plugin DLLs extracted
