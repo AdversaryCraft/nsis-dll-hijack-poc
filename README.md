@@ -1,8 +1,5 @@
 # nsis-dll-hijack-poc
 
-
----
-
 ## Overview
 
 Software installers are often treated as trusted executables, yet they perform numerous runtime operations before the target application is installed.
