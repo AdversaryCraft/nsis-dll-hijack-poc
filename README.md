@@ -92,6 +92,12 @@ Installation completes
 
 ---
 
+![Install_Button](screenshots/Install_Button.png)
+
+*NSIS loads `nsDialogs.dll` from temp folder - proxy executes and displays MessageBox*
+
+---
+
 ## Disclaimer
 
 This repository is provided solely for educational purposes, reverse engineering research, and defensive security validation within authorized laboratory environments.
