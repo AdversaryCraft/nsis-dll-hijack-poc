@@ -13,7 +13,6 @@ Rather than focusing on exploitation, this project demonstrates how reverse engi
 - Windows internals research
 - Runtime instrumentation
 
----
 
 ## Research Goals
 
@@ -27,8 +26,6 @@ This project investigates:
 - Export forwarding
 - Detection opportunities for defenders
 
----
-
 ## Repository Structure
 
 ```text
@@ -41,8 +38,6 @@ This project investigates:
 ├── diagrams/
 └── README.md
 ```
-
----
 
 ## Runtime Workflow
 
@@ -71,8 +66,6 @@ Original exports continue
 Installation completes
 ```
 
----
-
 ## Reverse Engineering Process
 
 The research consists of several stages.
@@ -80,8 +73,6 @@ The research consists of several stages.
 ### 1. Installer Identification
 
 The installer is identified using Detect It Easy (DIE) to confirm it is an NSIS package.
-
----
 
 ### 2. Runtime Extraction
 
@@ -96,8 +87,6 @@ The installer extracts multiple plugin DLLs including:
 - nsDialogs.dll
 - System.dll
 - UserInfo.dll
-
----
 
 ### 3. Module Loading
 
@@ -124,15 +113,11 @@ Important exports include:
 - OnNotify
 - SelectFolderDialog
 
----
-
 ### 5. Export Forwarding
 
 A compatible proxy DLL is used to validate runtime behavior while forwarding remaining exports to the original plugin.
 
 This demonstrates the plugin contract expected by the installer without disrupting normal execution.
-
----
 
 ## Detection Opportunities
 
@@ -145,8 +130,6 @@ Potential telemetry includes:
 - Runtime DLL replacement
 - Temporary directory monitoring
 
----
-
 ## Purple Team Validation
 
 Suggested validation objectives:
@@ -156,8 +139,6 @@ Suggested validation objectives:
 - Are Image Load events collected?
 - Are temporary installer directories monitored?
 - Is module signing verified?
-
----
 
 ## Screenshots
 
@@ -171,15 +152,12 @@ The accompanying article includes:
 - Runtime validation
 - Successful installation
 
----
-
 ## Blog
 
 A complete technical write-up is available on **AdversaryCraft**:
 
 > **Inside the NSIS Runtime: Plugin Architecture, Temporary Extraction, and Export Forwarding**
 
----
 
 ## References
 
@@ -189,7 +167,6 @@ A complete technical write-up is available on **AdversaryCraft**:
 - Detect It Easy
 - x64dbg
 
----
 
 ## Disclaimer
 
