@@ -6,25 +6,6 @@ Software installers are often treated as trusted executables, yet they perform n
 
 This repository explores the **Nullsoft Scriptable Install System (NSIS)** plugin architecture by examining how plugin DLLs are extracted into temporary directories, loaded into memory, and resolved through exported functions.
 
-Rather than focusing on exploitation, this project demonstrates how reverse engineering installer runtimes can improve:
-
-- Detection engineering
-- Purple team validation
-- Windows internals research
-- Runtime instrumentation
-
-
-## Research Goals
-
-This project investigates:
-
-- NSIS runtime architecture
-- Plugin extraction workflow
-- Temporary directory creation
-- Plugin export resolution
-- Runtime module loading
-- Export forwarding
-- Detection opportunities for defenders
 
 ## Repository Structure
 
