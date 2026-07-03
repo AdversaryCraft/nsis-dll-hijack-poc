@@ -92,7 +92,7 @@ Installation completes
 
 ---
 
-![Install_Button](screenshots/Install_Button.png)
+![Install_Button](screenshots/DLL_Load.png)
 
 *NSIS loads `nsDialogs.dll` from temp folder - proxy executes and displays MessageBox*
 
