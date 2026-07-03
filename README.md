@@ -75,4 +75,4 @@ Installation completes
 
 This repository is provided solely for educational purposes, reverse engineering research, and defensive security validation within authorized laboratory environments.
 
-The code and documentation are intended to help security professionals better understand Windows installer internals and improve defensive telemetry. They are **not** intended for unauthorized use against systems you do not own or have permission to test.
+The code and documentation are intended to help security professionals better understand Windows installer internals and improve defensive telemetry. They are not intended for unauthorized use against systems you do not own or have permission to test.
