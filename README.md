@@ -76,7 +76,7 @@ Installation completes
 
 ![UAC_Prompt](screenshots/UAC_Prompt.png)
 
-*CCleaner installer running after UAC approval*
+*UAC prompt appears after `launch.wsf` launches `ccsetup564.exe`*
 
 ## Disclaimer
 
