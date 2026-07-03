@@ -19,13 +19,12 @@ This allows arbitrary code execution with the installer's privileges while maint
 ## Repository Structure
 
 ```text
-
+├──  README.md
 ├── ccsetup564.exe             # Legitimate NSIS installer
 ├── launch.wsf                 # WSF launcher script
 ├── msvcrt_original.dll        # Legitimate nsDialogs.dll (renamed for stealth)
 ├── nsDialogs.cpp              # Proxy DLL (custom Create export with MessageBox, forwards other exports to msvcrt_original.dll)
-├── screenshots/ 
-└── README.md
+└── screenshots/
 ```
 
 ## How It Works?
