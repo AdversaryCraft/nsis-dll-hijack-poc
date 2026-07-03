@@ -72,6 +72,11 @@ Installation completes
 5. Click "Install" → your proxy DLL loads
 6. CCleaner Installation Completed
 
+## Screenshots
+
+![Installer](screenshots/UAC_Prompt.png)
+*CCleaner installer running after UAC approval*
+
 ## Disclaimer
 
 This repository is provided solely for educational purposes, reverse engineering research, and defensive security validation within authorized laboratory environments.
