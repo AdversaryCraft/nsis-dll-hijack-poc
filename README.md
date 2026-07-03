@@ -15,6 +15,10 @@ This PoC demonstrates how an attacker can hijack this process by:
 
 This allows arbitrary code execution with the installer's privileges while maintaining normal installer functionality – making it difficult for users to detect any anomaly.
 
+For more cybersecurity research, malware analysis, and adversary emulation content, visit **Adversary Craft**:
+
+🌐 https://adversarycraft.com/
+
 
 ## Repository Structure
 
