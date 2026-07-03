@@ -23,7 +23,7 @@ This allows arbitrary code execution with the installer's privileges while maint
 ├── ccsetup564.exe             # Legitimate NSIS installer
 ├── launch.wsf                 # WSF launcher script
 ├── msvcrt_original.dll        # Legitimate nsDialogs.dll (renamed for stealth)
-├── nsDialogs_dll_proxy        # Proxy DLL Source Code (custom Create export with MessageBox, forwards other exports to msvcrt_original.dll)
+├── nsDialogs.cpp, nsDialogs.def # Proxy DLL Source Code (custom Create export with MessageBox, forwards other exports to msvcrt_original.dll)
 └── screenshots/
 ```
 
