@@ -78,6 +78,11 @@ Installation completes
 
 *UAC prompt appears after `launch.wsf` launches `ccsetup564.exe`*
 
+![DLL Swap](screenshots/Replaced_DLLs_In_Temp.png)
+
+*`launch.wsf` copies `nsDialogs.dll` and `msvcrt_original.dll` to `ns*.tmp` folder before user clicks Install*
+
+
 ## Disclaimer
 
 This repository is provided solely for educational purposes, reverse engineering research, and defensive security validation within authorized laboratory environments.
