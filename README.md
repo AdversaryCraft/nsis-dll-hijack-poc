@@ -10,7 +10,7 @@ This PoC demonstrates how an attacker can hijack this process by:
 
 1. Pre-positioning a proxy DLL named `nsDialogs.dll` in the same directory as the installer
 2. Monitoring for the creation of the temporary `ns*.tmp` folder
-3. Copying the proxy DLL into the temp folder before the installer loads it
+3. Copying the proxy DLL along with the original DLL into the temp folder before the installer loads it
 4. The proxy DLL executes custom code (e.g., MessageBox) while forwarding legitimate calls to the original, renamed DLL (`msvcrt_original.dll`)
 
 This allows arbitrary code execution with the installer's privileges while maintaining normal installer functionality – making it difficult for users to detect any anomaly.
@@ -23,7 +23,7 @@ This allows arbitrary code execution with the installer's privileges while maint
 ├── ccsetup564.exe             # Legitimate NSIS installer
 ├── launch.wsf                 # WSF launcher script
 ├── nsDialogs.dll              # Proxy DLL (custom Create export with MessageBox, forwards other exports to msvcrt_original.dll)
-├── msvcrt_original.dll        # Legitimate DLL (renamed for stealth)
+├── msvcrt_original.dll        # Legitimate nsDialogs.dll (renamed for stealth)
 ├── screenshots/
 └── README.md
 ```
@@ -68,9 +68,8 @@ Installation completes
 2. Place all files in same folder
 3. Double-click `update.wsf`
 4. Click "Yes" on UAC prompt
-5. Click "Install" → your proxy loads
-
-
+5. Click "Install" → your proxy DLL loads
+6. CCleaner Installation Completed
 
 ## Disclaimer
 
